@@ -1,0 +1,27 @@
+{
+	"name": "webpack-demo",
+	"version": "1.0.0",
+	"description": "webpack-practice",
+	"main": "index.js",
+	"keywords": [
+		"webpack",
+		"webpack@1",
+		"webpack@2",
+		"webpack@3"
+	],
+	"author": "yike",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kkcode24/webpack-demo.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kkcode24/webpack-demo/issues"
+	},
+	"homepage": "https://github.com/kkcode24/webpack-demo#readme",
+	"devDependencies": {
+		"open-browser-webpack-plugin": "0.0.5",
+		"webpack": "^1.0.5",
+		"webpack-dev-server": "^1.0.2"
+	}
+}
