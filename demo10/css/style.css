@@ -1,0 +1,14 @@
+html,body {
+	color: red;
+	background: #ccc;
+}
+
+#container{
+	width: 150px;
+    height: 150px;
+    
+    color: #f00;
+    background:url(../images/logo-201805.jpg);
+    /*生成完图片会被处理成base64的字符串 注意：不要写'/images/logo-201805.png',否则图片不被处理*/
+    background-size: cover;
+}

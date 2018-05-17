@@ -20,7 +20,16 @@
 	},
 	"homepage": "https://github.com/kkcode24/webpack-demo#readme",
 	"devDependencies": {
+		"babel-loader": "^5.0.0",
+		"copy-webpack-plugin": "^4.5.1",
+		"css-loader": "^0.28.11",
+		"handlebars": "^4.0.0",
+		"handlebars-loader": "^1.1.1",
+		"less": "^2.2.0",
+		"less-loader": "^2.2.3",
 		"open-browser-webpack-plugin": "0.0.5",
+		"style-loader": "^0.21.0",
+		"url-loader": "^0.6.0",
 		"webpack": "^1.0.5",
 		"webpack-dev-server": "^1.0.2"
 	}
