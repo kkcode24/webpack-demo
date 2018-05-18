@@ -29,3 +29,7 @@ $ npm run dev
 ```
 
 If the above command doesn't open your browser automaticly, you have to visit http://127.0.0.1:8080 by yourself.
+
+## webpack-guide-wiki
+[webpack-guide-wiki](https://blog.csdn.net/my_study_everyday/article/details/80361435)
+
