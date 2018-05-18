@@ -1,10 +1,12 @@
+var NODE_ENV = process.env.NODE_ENV;
+
 var path = require('path');
 var webpack = require('webpack');
 var buildPath = path.resolve(__dirname, "build");
 var nodeModulesPath = path.resolve(__dirname, 'node_modules');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const config = {
+var config = {
 	entry: {
 		m1:path.resolve(__dirname, 'main.js'),
 		m2:path.resolve(__dirname, 'main1.js')
@@ -16,12 +18,8 @@ const config = {
 	resolve: {
 		extentions: ["", ".js"] // 当rewquire的模块找不到时，添加这些后缀。
 	},
+	devtool: 'eval',
 	plugins: [
-		//压缩打包的文件
-		new webpack.optimize.UglifyJsPlugin({
-			compress: true, //default 'true', you can pass 'false' to disable this plugin
-			debug: true //default 'false', it will display some information in console
-		}),
 		new webpack.BannerPlugin("作者：kkcode"),
 		// 把copy目录下的文件复制到build/paste目录下
 		new CopyWebpackPlugin([{
@@ -59,6 +57,18 @@ const config = {
 			}
 		]
 	},
+}
+
+if(NODE_ENV === "prod"){//判断是生产环境执行生产配置
+    delete config.devtool;
+    config.plugins = [
+    //压缩打包的文件
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        //supresses warnings, usually from module minification
+        warnings: false
+      }
+    })];
 }
 
 module.exports = config;

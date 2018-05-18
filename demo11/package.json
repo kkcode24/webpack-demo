@@ -1,0 +1,14 @@
+{
+  "name": "webpack-demo02",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev-win": "set NODE_ENV=dev&&webpack-dev-server --open --colors",
+    "dev-mac": "export NODE_ENV=dev&&webpack-dev-server",
+    "build": "webpack --config webpack.config.js --colors",
+    "publish-mac": "export NODE_ENV=prod&&webpack -p --progress --colors",
+    "publish-win":  "set NODE_ENV=prod&&webpack -p --progress --colors"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}
