@@ -4,7 +4,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "build": "webpack -p"
+    "p": "webpack -p",
+    "build": "webpack --config webpack.config.js --colors"
   },
   "license": "MIT",
   "devDependencies": {}
