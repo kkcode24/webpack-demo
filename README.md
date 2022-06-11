@@ -1,5 +1,6 @@
 # webpack-demo
-webpack-practice
+webpack-practice 
+[webpack学习在线书籍：深入浅出Webpack](http://webpack.wuhaolin.cn/)
 
 ## How to use
 First, install [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) globally.
